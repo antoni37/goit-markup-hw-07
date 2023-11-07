@@ -1,31 +1,95 @@
 
 :root {
-  --main-text-color: #434455;
-  --headers-color: #2e2f42;
-  --footer-background-color: #2e2f42;
-  --logo-color: #4d5ae5;
-  --color: #8e8f99;
-  --color:#404bbf;
-  --background-color: #31d0aa;
-  --color: #f4f4fd;
-  --background: var(--IRIS, #4D5AE5);
-  --color:var(--CORNFLOWER, #E7E9FC);
+    --main-text-color: #434455;
+    --headers-color: #2e2f42;
+    --footer-background-color: #2e2f42;
+    --logo-color: #4d5ae5;
+    --color: #8e8f99;
+    --color:#404bbf;
+    --background-color: #31d0aa;
+    --color: #f4f4fd;
+    --background: var(--IRIS, #4D5AE5);
+    --color:var(--CORNFLOWER, #E7E9FC);
+  }
+  * { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } 
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul {
+    list-style-type: none;
+  }
+  
+  .visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  img {
+    display: block;
+  }
+  
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-* { 
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--main-text-color);
-  background-color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
+  
+/* ================================================= MOBILE 👇 ========================================= */
+
+@media screen and (max-width: 767px) {   
+  .container {
+      min-width: 320px;
+      max-width: 428px;
+      margin: 0 auto;
+      padding: 0 16px;}
+    }
+
+   /* ================================================= TABLET 👇 ========================================= */
+
+@media screen and (min-width: 768px) {
+  .container {
+          width: 768px;
+          margin: 0 auto;
+          padding: 0 15px;
+      } }
+
+      /* ================================================= NOT DESKTOP 👇 ========================================= */
+
+@media screen and (max-width: 1157px) {
+  .icons-objectives-container {
+      display: none;
+  }
+  .doing-section {
+      display: none;
+  }
 }
-ul {
-  list-style-type: none;
-}
+/* ================================================= DESKTOP 👇 ========================================= */
+
+@media screen and (min-width: 1158px) {
+
+  .container {
+          width: 1158px;
+          margin: 0 auto;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+      
+
 .logo-link {
   color:#4d5ae5;
   text-decoration: none;
@@ -256,21 +320,7 @@ margin: 0 auto;
 .second-section{
   padding: 120px 0;
 }
-.visually-hidden{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-img {
-  display: block;
-}
+
 .list-two{
   gap: 24px; 
   justify-content: center; 
@@ -893,15 +943,5 @@ padding: 72px 24px 24px 24px;
   transition: transform 250ms var(--transition-variable);
   padding: 72px 24px 24px 24px;
 }
-.visually-hidden{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-overflow: hidden;
-}
+
+    }
