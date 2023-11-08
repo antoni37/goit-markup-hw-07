@@ -443,50 +443,75 @@
   <!--mobile-menu-->
   
   <div class="backdrop is-hidden" id="mobile-menu">
-    <button type="button" class="close-button ">
-        <svg class="closed-button-svg"  width="8" height="8">
-            <use href="./images/closed.svg#icon-close-black"></use>
-            </svg>
-    </button>
-
-    <nav  class="navi navi-list ">
-        <ul>
-            <li><a href="./index.html">Studio</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-    </nav>
-    <address>
-        <ul >
-            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
-    </address>
-    <div>           
-        <ul>
-            <li><a href="#">
-                    <svg width="24" height="24" >
-                        <use href=./images/icons.svg#icon-instagram></use>
-                    </svg></a></li>
-            <li><a href="#">
-                    <svg width="24" height="24">
-                        <use href=./images/icons.svg#icon-twitter></use>
-                    </svg></a></li>
-            <li ><a href="#">
-                    <svg width="24" height="24" >
-                        <use href=./images/icons.svg#icon-facebook></use>
-                    </svg></a></li>
-            <li ><a href="#">
-                    <svg width="24" height="24">
-                        <use href=./images/icons.svg#icon-linkedin></use>
-                    </svg></a></li>
-        </ul>
-    </div>
+        <div class="hamburger-div">
+          <div class="hamburger-button-container">
+            <button class="js-close-menu hamburger-close-button">
+              <svg class="hamburger-close-svg" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="hamburger-navigation">
+            <ul class="hamburger-nav-list">
+              <li>
+                <a class="hamburger-nav-link link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="hamburger-nav-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li><a class="hamburger-nav-link link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+  
+          <address class="hamburger-address">
+            <ul class="hamburger-address-list">
+              <li>
+                <a class="hamburger-phone link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="hamburger-mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="hamburger-social-media-list">
+            <li class="hamburger-social-media-li">
+              <a class="hamburger-social-media-link" href="">
+                <svg class="hamburger-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hamburger-social-media-li">
+              <a class="hamburger-social-media-link" href="">
+                <svg class="hamburger-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hamburger-social-media-li">
+              <a class="hamburger-social-media-link" href="">
+                <svg class="hamburger-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hamburger-social-media-li">
+              <a class="hamburger-social-media-link" href="">
+                <svg class="hamburger-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 </div>
 
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
 <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
