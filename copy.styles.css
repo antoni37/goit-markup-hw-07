@@ -335,6 +335,8 @@ a.container-menu-link {
   }
   .person{
     display: block;
+    max-width: 100%;
+    height: auto;
   }  
   .four-section{
     padding: 120px 0 ;
