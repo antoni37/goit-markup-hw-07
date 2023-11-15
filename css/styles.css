@@ -262,6 +262,7 @@ ol {
     justify-content: center;
     gap: 24px;
     margin-bottom: 8px;
+    align-items: center;
   }
   .roc-two-1{
     display: flex;
@@ -413,7 +414,6 @@ ol {
     justify-content: center;
     column-gap: 24px;
     row-gap: 72px;
-    padding-bottom: 96px;
   }
 
   .fivf-section{
@@ -1516,7 +1516,7 @@ a.container-menu-link {
     justify-content: center;
     column-gap: 24px;
     row-gap: 72px;
-    padding-bottom: 96px;
+   
   }
 
   .fivf-section{
